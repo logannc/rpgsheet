@@ -14,3 +14,5 @@ jobs:
         with:
           working-directory: sapperapp
           spec: cypress/integration/spec.js
+          start: npm run build && npm run start
+          wait-on: 'http://localhost:3000'
