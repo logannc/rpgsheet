@@ -1,3 +1,3 @@
-![Node.js CI](https://github.com/logannc/rpgsheet/workflows/Node.js%20CI/badge.svg)
+![Cypress Tests](https://github.com/logannc/rpgsheet/workflows/Cypress%20Tests/badge.svg)
 # rpgsheet
 A modular RPG Character Sheet application
