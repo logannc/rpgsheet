@@ -16,3 +16,4 @@ jobs:
           spec: cypress/integration/spec.js
           start: npm run build && npm run start
           wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120 # it takes surprisingly long to build
