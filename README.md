@@ -1,5 +1,5 @@
 ![Cypress Tests](https://github.com/logannc/rpgsheet/workflows/Cypress%20Tests/badge.svg)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/879bf1c6-cc87-40f7-b2d4-170226665def/deploy-status)](https://app.netlify.com/sites/hardcore-colden-dbe897/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/879bf1c6-cc87-40f7-b2d4-170226665def/deploy-status)](https://app.netlify.com/sites/rpgsheet/deploys)
 # rpgsheet
 A modular RPG Character Sheet application
 
