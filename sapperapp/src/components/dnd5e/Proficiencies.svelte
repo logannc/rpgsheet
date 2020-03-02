@@ -1,4 +1,5 @@
 <script>
+// todo: take one object or receive registered kinds
 export let weapons = [];
 export let armor = [];
 export let tools = [];

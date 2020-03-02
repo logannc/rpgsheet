@@ -24,6 +24,6 @@ export let checked;
 </style>
 
 <div class="container">
-    <div class="box" class:filled="{checked}"></div>
+    <div class="box" class:filled={checked}></div>
     <div class="text">{name}{#if subtext}({subtext}){/if}</div>
 </div>
