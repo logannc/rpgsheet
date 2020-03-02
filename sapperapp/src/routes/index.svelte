@@ -1,3 +1,7 @@
+<script>
+import Nav from '../components/Nav.svelte';
+</script>
+
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -33,14 +37,16 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>RPG Sheet</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>RPG Sheet</h1>
 
 <figure>
 	<img alt='Borat' src='great-success.png'>
 	<figcaption>HIGH FIVE!</figcaption>
 </figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p>Please select one of the pre-made sheets in the nav bar.</p>
+
+<p>In the future, a sheet builder will be available.</p>
