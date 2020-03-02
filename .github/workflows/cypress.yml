@@ -12,4 +12,5 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v1
         with:
-          spec: sapperapp/cypress/integration/spec.js
+          working-directory: sapperapp
+          spec: cypress/integration/spec.js
