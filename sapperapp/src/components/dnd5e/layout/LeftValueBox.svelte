@@ -11,16 +11,16 @@ export let text;
     }
     .box {
         border: solid 1px black;
-        border-radius: 50%;
-        width: 15px;
-        height: 15px;
+        border-radius: 0.5rem;
+        width: 30px;
+        height: 30px;
     }
     .text {
-        flex: 1 0;
+        margin-left: 1rem;
     }
 </style>
 
 <div class="container">
     <div class="box">{box}</div>
-    <div class="text">{text}</div>
+    <span class="text">{text}</span>
 </div>
