@@ -80,7 +80,7 @@ let profs = {
             </div>
             <div class="flex-col" id="skill">
                 <Inspiration box="" />
-                <ProficiencyBonus box="" />
+                <ProficiencyBonus box="+4" />
                 <div id="savingthrows" style="padding: 1rem; flex-grow: 0">
                     {#each savingthrows as st}
                         <SavingThrow {...st} />
