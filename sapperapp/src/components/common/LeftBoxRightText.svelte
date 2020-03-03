@@ -7,6 +7,7 @@ export let text;
     .container {
         display: flex;
         align-items: center;
+        padding: 1rem;
     }
     .box {
         border: solid 1px black;

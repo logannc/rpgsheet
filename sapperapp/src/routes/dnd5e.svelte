@@ -1,8 +1,11 @@
 <script>
 import LeftBoxRightText from '../components/common/LeftBoxRightText.svelte';
-import CheckedItem from '../components/common/CheckedItem.svelte';
 import NumberBox from '../components/common/NumberBox.svelte';
-import Attribute from '../components/dnd5e/Attribute.svelte';
+import Attribute from '../components/dnd5e/standard/Attribute.svelte';
+import Inspiration from '../components/dnd5e/standard/Inspiration.svelte';
+import ProficiencyBonus from '../components/dnd5e/standard/ProficiencyBonus.svelte';
+import SavingThrow from '../components/dnd5e/standard/SavingThrow.svelte';
+import Skill from '../components/dnd5e/standard/Skill.svelte';
 import Proficiencies from '../components/dnd5e/Proficiencies.svelte';
 import DeathSaves from '../components/dnd5e/DeathSaves.svelte';
 let attributes = [
@@ -14,7 +17,7 @@ let attributes = [
     {name: "Charisma", value: 13},
 ];
 let savingthrows = [
-    {name: "Strength", checked: false},
+    {name: "Strength", mod: -1, checked: false},
     {name: "Dexterity", checked: false},
     {name: "Constitution", checked: false},
     {name: "Intelligence", checked: true},
@@ -80,16 +83,16 @@ let profs = {
                 {/each}
             </div>
             <div class="flex-col" id="skill">
-                <LeftBoxRightText box="" text="Inspiration" />
-                <LeftBoxRightText box="" text="Proficiency Bonus" />
-                <div id="savingthrows">
+                <Inspiration box="" />
+                <ProficiencyBonus box="+4" />
+                <div id="savingthrows" style="padding: 1rem; flex-grow: 0">
                     {#each savingthrows as st}
-                        <CheckedItem {...st} />
+                        <SavingThrow {...st} />
                     {/each}
                 </div>
-                <div id="skills">
+                <div id="skills" style="padding: 1rem">
                     {#each skills as skill}
-                        <CheckedItem {...skill} />
+                        <Skill {...skill} />
                     {/each}
                 </div>
             </div>
