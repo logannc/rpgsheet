@@ -5,8 +5,10 @@ let itemsdiv;
 let side_height = "0%";
 
 onMount(() => {
-    console.log(itemsdiv, itemsdiv.clientHeight);
-    let needed_height = 100*(itemsdiv.clientHeight - 175)/itemsdiv.clientHeight;
+    // this magic number is a rough estimation of pixels taken up by the top and bottom svg
+    // for more robustness, it should be calculated dynamically like https://stackoverflow.com/a/11511828
+    let top_bottom_estimate = 175;
+    let needed_height = 100*(itemsdiv.clientHeight - top_bottom_estimate)/itemsdiv.clientHeight;
     side_height = needed_height + "%";
 });
 </script>
