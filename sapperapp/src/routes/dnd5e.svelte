@@ -72,6 +72,10 @@ let profs = {
     }
 </style>
 
+<svelte:head>
+	<title>D&amp;D 5e Character Sheet</title>
+</svelte:head>
+
 <div class="flex-row" id="sheetcontainer">
     <div class="flex-col" id="attskillprof">
         <div class="flex-row" id="attskill">
