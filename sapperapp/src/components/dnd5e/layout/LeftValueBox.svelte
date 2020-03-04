@@ -4,7 +4,7 @@ export let text;
 export let container = 'inspiration_box';
 let container_image = '/images/dnd5e/standard/' + container + '.svg';
 let tweaked_left_pad = {
-    proficiency_bonus_box : "12%",
+    proficiency_bonus_box : "13%",
     inspiration_box : "10%",
 }
 let left_pad = tweaked_left_pad[container] || "10%";
@@ -21,7 +21,7 @@ let left_pad = tweaked_left_pad[container] || "10%";
         background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 1.5rem 1rem;
+        padding: 1.75rem 1rem;
     }
     .box {
         min-width: 30px;
