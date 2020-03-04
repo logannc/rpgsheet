@@ -1,5 +1,5 @@
 <style>
-    .spacing {
+    .spacer {
         padding: 1rem;
         flex-grow: 0;
     }
@@ -34,7 +34,7 @@
     }
 </style>
 
-<div class="spacing">
+<div class="spacer">
     <div class="container">
         <div class="box"></div>
         <div class="items">

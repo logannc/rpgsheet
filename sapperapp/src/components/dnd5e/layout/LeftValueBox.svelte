@@ -11,8 +11,8 @@ let left_pad = tweaked_left_pad[container] || "10%";
 </script>
 
 <style>
-    .negacontainer {
-        margin: 0 -1rem;
+    .spacer {
+        margin: 0.25rem -1rem;
     }
     .container {
         display: flex;
@@ -39,7 +39,7 @@ let left_pad = tweaked_left_pad[container] || "10%";
     }
 </style>
 
-<div class="negacontainer">
+<div class="spacer">
     <div class="container" style="background-image: url('{container_image}');">
         <span class="box" style="margin-left: {left_pad}">{box}</span>
         <div class="textbox">
