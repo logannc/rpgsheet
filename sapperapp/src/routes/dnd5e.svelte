@@ -5,7 +5,9 @@ import Attribute from '../components/dnd5e/standard/Attribute.svelte';
 import Inspiration from '../components/dnd5e/standard/Inspiration.svelte';
 import ProficiencyBonus from '../components/dnd5e/standard/ProficiencyBonus.svelte';
 import SavingThrow from '../components/dnd5e/standard/SavingThrow.svelte';
+import SavingThrowsBox from '../components/dnd5e/standard/SavingThrowsBox.svelte';
 import Skill from '../components/dnd5e/standard/Skill.svelte';
+import SkillsBox from '../components/dnd5e/standard/SkillsBox.svelte';
 import Proficiencies from '../components/dnd5e/Proficiencies.svelte';
 import DeathSaves from '../components/dnd5e/DeathSaves.svelte';
 let attributes = [
@@ -85,16 +87,16 @@ let profs = {
             <div class="flex-col" id="skill">
                 <Inspiration box="" />
                 <ProficiencyBonus box="+4" />
-                <div id="savingthrows" style="padding: 1rem; flex-grow: 0">
+                <SavingThrowsBox>
                     {#each savingthrows as st}
                         <SavingThrow {...st} />
                     {/each}
-                </div>
-                <div id="skills" style="padding: 1rem">
+                </SavingThrowsBox>
+                <SkillsBox>
                     {#each skills as skill}
                         <Skill {...skill} />
                     {/each}
-                </div>
+                </SkillsBox>
             </div>
         </div>
         <div id="passive">
