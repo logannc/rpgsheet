@@ -3,6 +3,7 @@ import LeftBoxRightText from '../components/common/LeftBoxRightText.svelte';
 import NumberBox from '../components/common/NumberBox.svelte';
 import Attribute from '../components/dnd5e/standard/Attribute.svelte';
 import Inspiration from '../components/dnd5e/standard/Inspiration.svelte';
+import Passive from '../components/dnd5e/standard/Passive.svelte';
 import ProficiencyBonus from '../components/dnd5e/standard/ProficiencyBonus.svelte';
 import SavingThrow from '../components/dnd5e/standard/SavingThrow.svelte';
 import SavingThrowsBox from '../components/dnd5e/standard/SavingThrowsBox.svelte';
@@ -67,9 +68,6 @@ let profs = {
         display: flex;
         flex-direction: column;
     }
-    #sheetcontainer {
-        width: 100%;
-    }
 </style>
 
 <svelte:head>
@@ -100,7 +98,7 @@ let profs = {
             </div>
         </div>
         <div id="passive">
-            <LeftBoxRightText box="13" text="Passive Wisdom (Perception)" />
+            <Passive box="13" text="Passive Wisdom (Perception)" />
         </div>
         <Proficiencies {...profs} />
     </div>

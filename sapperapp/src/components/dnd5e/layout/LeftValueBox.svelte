@@ -7,6 +7,8 @@ let tweaked_left_pad = {
     proficiency_bonus_box : "13%",
     inspiration_box : "10%",
 }
+// TODO: switch to css variables
+// https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/
 let left_pad = tweaked_left_pad[container] || "10%";
 </script>
 
@@ -17,7 +19,6 @@ let left_pad = tweaked_left_pad[container] || "10%";
     .container {
         display: flex;
         align-items: center;
-        /* TODO: add more box types again */
         background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;

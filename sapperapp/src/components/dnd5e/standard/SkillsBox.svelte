@@ -3,7 +3,7 @@ import { onMount } from 'svelte';
 let itemsdiv;
 
 let side_height = "0%";
-
+// TODO: need to also adjust width when resizing
 onMount(() => {
     // this magic number is a rough estimation of pixels taken up by the top and bottom svg
     // for more robustness, it should be calculated dynamically like https://stackoverflow.com/a/11511828

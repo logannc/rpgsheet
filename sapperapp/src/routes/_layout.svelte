@@ -7,7 +7,8 @@
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
+		/* TODO: lets make it wider, we're running out of room already. */
+		max-width: 56rem;
 		background-color: white;
 		padding: 2em;
 		margin: 0 auto;

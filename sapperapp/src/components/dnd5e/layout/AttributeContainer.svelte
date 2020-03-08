@@ -16,6 +16,7 @@ export let mod;
         align-items: center;
         height: 0;
         padding-bottom: 110%;
+        /* max-width: 6.8rem; */
     }
     .name {
         font-weight: 600;
